@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Amazing Events</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Upcoming Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./pastEvents.html"
+                >Past Events</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./stats.html">Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item w-100 active" data-bs-interval="3000">
+            <h2>Our Events: Books</h2>
+            <img src="../assets/books.jpg" class="d-flex w-100" alt="..." />
+          </div>
+          <div class="carousel-item w-100" data-bs-interval="3000 ">
+            <h2>Our Events: Cinema</h2>
+            <img
+              src="../assets/cinema.jpg"
+              class="d-flex w-100 h-30"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item w-100" data-bs-interval="3000 ">
+            <h2>Our Events: Concert</h2>
+            <img src="../assets/concert.jpg" class="d-flex w-100" alt="..." />
+          </div>
+          <div class="carousel-item w-100" data-bs-interval="3000 ">
+            <h2>Our Events: Food</h2>
+            <img src="../assets/food.jpg" class="d-flex w-100" alt="..." />
+          </div>
+          <div class="carousel-item w-100" data-bs-interval="3000 ">
+            <h2>Our Events: Museum</h2>
+            <img src="../assets/museum.jpg" class="d-flex w-100" alt="..." />
+          </div>
+          <div class="carousel-item w-100" data-bs-interval="3000 ">
+            <h2>Our Events: Party</h2>
+            <img src="../assets/party.jpg" class="d-flex w-100" alt="..." />
+          </div>
+          <div class="carousel-item w-100" data-bs-interval="3000 ">
+            <h2>Our Events: Race</h2>
+            <img src="../assets/race.jpg" class="d-flex w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <div id="checksInputs" class="d-flex justify-content-center p-3">
+      <!-- Button trigger modal -->
+      <button
+        id="categories"
+        type="button"
+        class="btn btn-secondary"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        Select Category
+      </button>
+
+      <!-- Modal -->
+    </div>
+
+    <div class="checksFather">
+      <div
+        class="d-flex justify-content-center align-itmes-center"
+        role="search"
+      >
+        <input
+          class="form-control me-1 p-2"
+          id="searchInput"
+          type="search"
+          placeholder="Search"
+        />
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3" id="staticBackdropLabel">
+                  Category
+                </h1>
+              </div>
+              <div class="modal-body d-flex flex-wrap" id="modal-body"></div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="cards"
+      class="m-3 d-flex flex-wrap justify-content-center gap-4"
+    ></div>
+
+    <button
+      type="button"
+      class="btn btn-secondary btn-fixed"
+      onclick="topFunction()"
+      id="myBtn"
+    >
+      Subir
+    </button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../dataNew.js"></script>
+    <script src="../upComingEvents.js"></script>
+  </body>
+</html>

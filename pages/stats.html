@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stats</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+  </head>
+
+  <body class="body">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./uncomingEvents.html"
+                >Upcoming Events</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./pastEvents.html"
+                >Past Events</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="carousel-inner">
+        <div class="carousel-item w-100 active" data-bs-interval="3000">
+          <h2>Our Events: Books</h2>
+          <img src="../assets/books.jpg" class="d-flex w-100" alt="..." />
+        </div>
+        <div class="carousel-item w-100" data-bs-interval="3000 ">
+          <h2>Our Events: Cinema</h2>
+          <img src="../assets/cinema.jpg" class="d-flex w-100 h-30" alt="..." />
+        </div>
+        <div class="carousel-item w-100" data-bs-interval="3000 ">
+          <h2>Our Events: Concert</h2>
+          <img src="../assets/concert.jpg" class="d-flex w-100" alt="..." />
+        </div>
+        <div class="carousel-item w-100" data-bs-interval="3000 ">
+          <h2>Our Events: Food</h2>
+          <img src="../assets/food.jpg" class="d-flex w-100" alt="..." />
+        </div>
+        <div class="carousel-item w-100" data-bs-interval="3000 ">
+          <h2>Our Events: Museum</h2>
+          <img src="../assets/museum.jpg" class="d-flex w-100" alt="..." />
+        </div>
+        <div class="carousel-item w-100" data-bs-interval="3000 ">
+          <h2>Our Events: Party</h2>
+          <img src="../assets/party.jpg" class="d-flex w-100" alt="..." />
+        </div>
+        <div class="carousel-item w-100" data-bs-interval="3000 ">
+          <h2>Our Events: Race</h2>
+          <img src="../assets/race.jpg" class="d-flex w-100" alt="..." />
+        </div>
+      </div>
+    </header>
+    <main class="d-flex flex-column flex-grow-1">
+      <div class="sectiondelstats">
+        <table class="d-flex flex-column col table container w-100">
+          <thead>
+            <th class="d-flex fs-2 h-25">Event Statitic</th>
+          </thead>
+          <tbody id="cuerpo1" class="w-100"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../stats.js"></script>
+  </body>
+</html>
