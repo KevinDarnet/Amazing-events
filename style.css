@@ -29,12 +29,12 @@ main {
   transition: all 0.5s ease;
 }
 .card-detail:hover {
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: rgb(244, 244, 244);
+  color: black;
 }
 .contact {
   min-height: 50vh;
-  min-width: 80%;
+  min-width: 50%;
 }
 .btn:hover {
   background-color: white;
